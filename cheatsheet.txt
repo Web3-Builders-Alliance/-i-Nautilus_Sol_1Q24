@@ -1,0 +1,26 @@
+// Switch cluster localhost|devent|mainnet
+solana config set --url localhost
+
+// Copy Metaplex and dnump to local file (-u m = mainnet cluster)
+solana program dump -u m metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s ~/.solana/metaplex.so
+
+// Run local validator and load metaplex using bpf-program (-r flag to reset ledger)
+solana-test-validator -r --ledger="/home/ubuntu/.solana/test-ledger" --bpf-program metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s ~/.solana/metaplex.so
+
+// Run local validator ledger
+solana-test-validator --ledger="/home/ubuntu/.solana/test-ledger"
+
+
+// Anchor Build project
+anchor build
+
+// Anchor Build/Test/Deploy locally (using local-validator instead of anchors validator)
+anchor test --skip-local-validator
+
+// Anchor deploy to localhost|devent|mainnet depending on config cluster
+anchor deploy
+
+// Close a deployed contract account and refund storage costs (if upgradeable)
+solana program close <PROGRAM_ID>
+
+
