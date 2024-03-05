@@ -97,7 +97,7 @@ describe("escrow", () => {
         vault,
         makerAtaX,
         makerAtaY,
-        token_program: TOKEN_PROGRAM_ID,
+        tokenProgram: TOKEN_PROGRAM_ID,
         associatedTokenProgram: ASSOCIATED_TOKEN_PROGRAM_ID,
         systemProgram: anchor.web3.SystemProgram.programId,
       })
@@ -119,7 +119,7 @@ describe("escrow", () => {
         escrow,
         vault,
         makerAtaX,
-        token_program: TOKEN_PROGRAM_ID,
+        tokenProgram: TOKEN_PROGRAM_ID,
         associatedTokenProgram: ASSOCIATED_TOKEN_PROGRAM_ID,
         systemProgram: anchor.web3.SystemProgram.programId,
       })
@@ -143,7 +143,7 @@ describe("escrow", () => {
         vault,
         makerAtaX,
         makerAtaY,
-        token_program: TOKEN_PROGRAM_ID,
+        tokenProgram: TOKEN_PROGRAM_ID,
         associatedTokenProgram: ASSOCIATED_TOKEN_PROGRAM_ID,
         systemProgram: anchor.web3.SystemProgram.programId,
       })
@@ -165,7 +165,7 @@ describe("escrow", () => {
         escrow,
         vault,
         makerAtaY,
-        token_program: TOKEN_PROGRAM_ID,
+        tokenProgram: TOKEN_PROGRAM_ID,
         associatedTokenProgram: ASSOCIATED_TOKEN_PROGRAM_ID,
         systemProgram: anchor.web3.SystemProgram.programId,
       })
